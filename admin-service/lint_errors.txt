@@ -1,0 +1,130 @@
+
+> adminservice@0.0.0 lint
+> eslint .
+
+
+C:\Users\imvis\Desktop\Project-Ecommerce\project-ecommerce\ShopSphere_Frontend\Adminservice\src\admin\AdminDashboard.jsx
+  123:19  error  'ShieldCheck' is not defined  no-undef
+
+C:\Users\imvis\Desktop\Project-Ecommerce\project-ecommerce\ShopSphere_Frontend\Adminservice\src\admin\CommissionSettings.jsx
+   17:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u                    no-unused-vars
+   23:5   error  'updateCategoryCommission' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+  144:32  error  'key' is defined but never used                                                                  no-unused-vars
+
+C:\Users\imvis\Desktop\Project-Ecommerce\project-ecommerce\ShopSphere_Frontend\Adminservice\src\admin\DeliveryReview.jsx
+   9:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u                     no-unused-vars
+  17:12  error  'isActioning' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u       no-unused-vars
+  18:27  error  'setIsSidebarOpen' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\imvis\Desktop\Project-Ecommerce\project-ecommerce\ShopSphere_Frontend\Adminservice\src\admin\OrderDetail.jsx
+  20:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\imvis\Desktop\Project-Ecommerce\project-ecommerce\ShopSphere_Frontend\Adminservice\src\admin\OrderManagement.jsx
+  47:8  warning  React Hook useEffect has a missing dependency: 'loadOrders'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+C:\Users\imvis\Desktop\Project-Ecommerce\project-ecommerce\ShopSphere_Frontend\Adminservice\src\admin\ProductManagement.jsx
+  14:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\imvis\Desktop\Project-Ecommerce\project-ecommerce\ShopSphere_Frontend\Adminservice\src\admin\Reports.jsx
+  25:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+  33:41  error  'Icon' is defined but never used                                               no-unused-vars
+
+C:\Users\imvis\Desktop\Project-Ecommerce\project-ecommerce\ShopSphere_Frontend\Adminservice\src\admin\SplashScreen.jsx
+   9:9   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+   7 |
+   8 |     useEffect(() => {
+>  9 |         setIsVisible(true);
+     |         ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  10 |         const timer = setTimeout(() => {
+  11 |             const token = localStorage.getItem('authToken') || sessionStorage.getItem('authToken');
+  12 |  react-hooks/set-state-in-effect
+  30:26  error  'e' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               no-unused-vars
+
+C:\Users\imvis\Desktop\Project-Ecommerce\project-ecommerce\ShopSphere_Frontend\Adminservice\src\admin\User.jsx
+   20:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+  357:41  error  'Icon' is defined but never used                                               no-unused-vars
+
+C:\Users\imvis\Desktop\Project-Ecommerce\project-ecommerce\ShopSphere_Frontend\Adminservice\src\admin\VendorApproval.jsx
+   2:23  error  'useLocation' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+  23:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u       no-unused-vars
+
+C:\Users\imvis\Desktop\Project-Ecommerce\project-ecommerce\ShopSphere_Frontend\Adminservice\src\admin\VendorDetails.jsx
+   1:27  error    'useMemo' is defined but never used. Allowed unused vars must match /^[A-Z_]/u                               no-unused-vars
+   2:10  error    'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u                                no-unused-vars
+  35:12  error    'vendors' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u                      no-unused-vars
+  71:8   warning  React Hook useEffect has a missing dependency: 'loadData'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+C:\Users\imvis\Desktop\Project-Ecommerce\project-ecommerce\ShopSphere_Frontend\Adminservice\src\admin\VendorRequests.jsx
+  25:9   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  23 |
+  24 |     useEffect(() => {
+> 25 |         loadVendors();
+     |         ^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  26 |     }, []);
+  27 |
+  28 |     // Filter to show ONLY pending requests  react-hooks/set-state-in-effect
+  37:45  error  'name' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 no-unused-vars
+
+C:\Users\imvis\Desktop\Project-Ecommerce\project-ecommerce\ShopSphere_Frontend\Adminservice\src\admin\VendorReview.jsx
+  25:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u                     no-unused-vars
+  28:10  error  'fetchVendorRequests' is defined but never used. Allowed unused vars must match /^[A-Z_]/u        no-unused-vars
+  28:31  error  'fetchAllVendors' is defined but never used. Allowed unused vars must match /^[A-Z_]/u            no-unused-vars
+  34:27  error  'setIsSidebarOpen' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+  35:12  error  'vendors' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u           no-unused-vars
+  35:21  error  'setVendors' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u        no-unused-vars
+
+C:\Users\imvis\Desktop\Project-Ecommerce\project-ecommerce\ShopSphere_Frontend\Adminservice\src\components\NotificationBell.jsx
+  3:10  error  'motion' is defined but never used. Allowed unused vars must match /^[A-Z_]/u                       no-unused-vars
+  9:53  error  'handleVendorAction' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\imvis\Desktop\Project-Ecommerce\project-ecommerce\ShopSphere_Frontend\Adminservice\src\components\SearchBar.jsx
+  1:2  error  Parsing error: Unexpected token <<
+
+C:\Users\imvis\Desktop\Project-Ecommerce\project-ecommerce\ShopSphere_Frontend\Adminservice\src\context\NotificationContext.jsx
+   1:54  error  'useEffect' is defined but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             no-unused-vars
+   5:14  error  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               react-refresh/only-export-components
+  24:33  error  Error: Cannot call impure function during render
+
+`Date.now` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+  22 |             status: 'Pending Approval',
+  23 |             read: false,
+> 24 |             timestamp: new Date(Date.now() - 1000 * 60 * 30).toISOString(),
+     |                                 ^^^^^^^^^^ Cannot call impure function
+  25 |         },
+  26 |         {
+  27 |             id: 'notif-2',          react-hooks/purity
+  35:33  error  Error: Cannot call impure function during render
+
+`Date.now` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+  33 |             status: 'Pending Approval',
+  34 |             read: false,
+> 35 |             timestamp: new Date(Date.now() - 1000 * 60 * 60 * 2).toISOString(),
+     |                                 ^^^^^^^^^^ Cannot call impure function
+  36 |         },
+  37 |         {
+  38 |             id: 'notif-swift',  react-hooks/purity
+
+C:\Users\imvis\Desktop\Project-Ecommerce\project-ecommerce\ShopSphere_Frontend\Adminservice\src\context\ProductContext.jsx
+  6:14  error  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\imvis\Desktop\Project-Ecommerce\project-ecommerce\ShopSphere_Frontend\Adminservice\src\context\UserContext.jsx
+  6:14  error  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+✖ 39 problems (37 errors, 2 warnings)
+
