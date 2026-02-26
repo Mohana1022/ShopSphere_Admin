@@ -5,7 +5,7 @@ import axios from "axios";
 // ─────────────────────────────────────────────────────────────
 const baseURL =
     import.meta.env.VITE_API_BASE_URL ||
-    "https://final-shopsphere-2-jeoy.onrender.com";
+    "https://final-shopsphere-8v1c.onrender.com/";
 
 // ─────────────────────────────────────────────────────────────
 // Token helper
